@@ -1,0 +1,450 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+/* ----------------------------------Header---------------------------------- */
+
+.banner {
+  position: fixed;
+  top: 4px;
+  left: 4px;
+  padding: 20px;
+  z-index: 9;
+}
+.menu {
+  display: flex;
+  position: fixed;
+  top: 4%;
+  right: 1%;
+  z-index: 9;
+}
+.menu .menu-img {
+  padding: 12px 15px;
+}
+.menu .menu-img img {
+  width: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(41, 2, 2, 1) 0%,
+    rgba(56, 11, 11, 1) 43%,
+    rgba(255, 0, 39, 1) 100%
+  );
+  border-radius: 50%;
+  position: relative;
+  left: 50px;
+}
+.menu .menu-list {
+  margin: 25px 0;
+  color: #fff;
+  cursor: pointer;
+}
+.menu .menu-list a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu .menu-list:before {
+  content: '';
+  width: 46px;
+  background: #fff;
+  position: absolute;
+  top: 16px;
+  bottom: 0;
+  right: -5px;
+  height: 1px;
+}
+.menu .menu-list:after {
+  content: '';
+  width: 46px;
+  background: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: -5px;
+  height: 1px;
+}
+.icon {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  bottom: 35%;
+  left: 15px;
+}
+.icon a {
+  padding: 10px 10px;
+  margin: 0 auto 10px;
+  display: table;
+}
+
+.icon a:hover  {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  transition: .3s all ease;
+}
+.icon a .fb {
+  padding: 0 6px;
+}
+/* svg ellipse{
+  stroke-width: 1;
+  stroke: #fff;
+  fill: none;
+  stroke-dashoffset: 69;
+  stroke-dasharray: 69;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+  transition: all .6s ease-in-out;
+}
+svg:hover ellipse{
+  stroke-dashoffset: 0;
+} */
+/* ------------------------------------------Aticle------------------------ */
+.s1 {
+  background-image: url(../images/Home\ Banner.png);
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+}
+.content-header {
+    color: #ffffff;
+}
+.content-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.content-header h1 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 70px;
+}
+.content-header a {
+ border: 1px solid #ffffff;
+ padding: 15px 35px;   
+ color: #ffffff;
+ text-decoration: none;
+}
+.content-header a:hover {
+  background-color: #fff;
+  color: #111111;
+  transition: .5s all ease;
+}
+/* ---------------------------------------Footer--------------------------------------- */
+/* ---------------------------------------Page----------------------------------------- */
+.page {
+    position: absolute;
+    bottom: 41px;
+    left: 110px;
+    display: flex;
+}
+.page .page-list-1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-style: italic;
+}
+.page .page-list-2 {
+    font-size: 30px;
+    padding: 27px 0 0;
+    color: #FFFFFF33;
+    font-style: italic;
+}
+/* ----------------------------------Copyright------------------------------------------------------- */
+.copyright {
+    position: fixed;
+    bottom: 20px;
+    right: 125px;
+    color: #ffffff;
+    display: flex;
+    margin-right: -105px;
+}
+.copyright .copyright-left {
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-end;
+}
+.copyright .copyright-right {
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 0 8px 25px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 900;
+}
+/* --------------------------------------------------Menu----------------------------------------------- */
+#menu {
+  position: fixed;
+  top: 23%;
+  left: 93%;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  /* padding: 0; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#menu li {
+  display: inline-block;
+  /* margin: 10px; */
+  color: #fff;
+  /* background: #fff; */
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* -webkit-border-radius: 10px; */
+  /* border-radius: 10px; */
+}
+#menu li.active {
+  /* background: #666; */
+  /* background: rgba(0, 0, 0, 0.5); */
+    /* border: 1px solid #fff; */
+    border-radius: 50%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #FF3D00;
+}
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+#menu li.active a:hover {
+  color: #fff;
+}
+#menu li:hover {
+  /* background: rgba(255, 255, 255, 0.8); */
+}
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+/* ----------------------------------------------Section2--------------------------------------------- */
+.s2 {
+    background: transparent linear-gradient(180deg, #F2AB27 0%, #A63E26 100%) 0% 0% no-repeat padding-box;
+}
+.sneakers-img {
+    position: absolute;
+    top: 26%;
+    right: 65%;
+}
+.sneakers-left .cover-img {
+    width: 57%;
+}
+.sneakers-left .s-img {
+    width: 38%;
+    position: absolute;
+    top: 19%;
+    left: 38%;
+}
+.sneakers-content {
+    position: absolute;
+    top: 56%;
+    right: 60%;
+    left: 9%;
+    color: #ffffff;
+}
+.sneakers-content h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.sneakers-content .border {
+  border-top: 1px solid #ffffff;
+  width: 135px;
+  margin-top: 15px;
+}
+.sneakers-content div, .sneakers-content p {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+.sneakers-content p {
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+.sneakers-content a {
+  background: transparent linear-gradient(284deg, #BF5424 0%, #EF430C 100%) 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  padding: 5px 25px;
+  text-decoration: none;
+  color: #fff;
+}
+.sneakers-right {
+    position: absolute;
+    right: -17%;
+    top: 19%;
+}
+.sneakers-right .bg-img {
+    width: 70%;
+}
+/* ----------------------------------------------Section 3--------------------------------------- */
+.s3 {
+  background-image: url(../images/Bg_Recruitment_Cover.png);
+  background-size: cover;
+  background-position: center;
+}
+.s3 .s3-gardient{
+  background: transparent linear-gradient(180deg, #F2AB27 0%, #A63E26 100%) 0% 0% no-repeat padding-box;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+/* -------------------------------------------------Section 4------------------------------------- */
+.s4 {
+  background: transparent linear-gradient(180deg, #A63E26 0%, #E9B255 100%) 0% 0% no-repeat padding-box;
+}
+.contact-content {
+  position: absolute;
+  top: 175px;
+  left: 115px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.contact-content h3 {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+}
+.contact-content p {
+  margin: 10px 0 15px;
+}
+.contact-content .contact-border {
+  border-top: 1px solid #fff;
+  width: 110px;
+}
+.contact-content .contact-img span {
+  position: relative;
+  bottom: 10px;
+  padding-left: 10px;
+}
+.contact-content .contact-img .call-icon {
+  padding-left: 18px;
+}
+.contact-center {
+  position: absolute;
+  top: 38%;
+  left: 35%;
+}
+.contact-center img {
+  width: 170px;
+}
+.contact-map {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+/* -----------------------------------Section 5----------------------------------- */
+.s5 {
+background: url(/images/background_cover.png);
+background-size: cover;
+}
+.menu-overlay {
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(0deg, #FF3D0099 0%, #00000099 100%) 0% 0% no-repeat padding-box;
+}
+.s5 .menu-overlay .menu-overlay-img img {
+  top: 50px;
+  width: 50%;
+  height: 50%;
+}
+/* -------------------------Navbar-overlay------------------------------ */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #FF3D0099 0%, #00000099 100%), url(../images/background_cover.png);
+  background-size: cover;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgba(0, 0, 0, 0.5);
+}
+.overlay .menu-img {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay .menu-img {
+  padding: 12px 15px;
+}
+.overlay .menu-img img {
+  width: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(41, 2, 2, 1) 0%,
+    rgba(56, 11, 11, 1) 43%,
+    rgba(255, 0, 39, 1) 100%
+  );
+  border-radius: 50%;
+  position: relative;
+  left: 50px;
+}
+.overlay .menu-list {
+  margin: 25px 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+.overlay .menu-list:before {
+  content: '';
+  position: absolute;
+  top: 55px;
+  bottom: 0;
+  left: 18px;
+  width: 18px;
+  right: 0;
+  height: 1px;
+  transform: rotate(90deg);
+  background: #fff;
+}
+.overlay .menu-list:after {
+  content: 'Close';
+  position: absolute;
+  top: 73px;
+  left: -18px;
+  bottom: 0;
+  right: 0;
+  transform: rotate(270deg);
+}
+.overlay .menu-list a {
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
